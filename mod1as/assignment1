@@ -1,0 +1,29 @@
+#include<iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main(){
+//Initializing the variables for FIRST CASE
+int side1 = 3; //First side of the triangle is initialized to 3
+int side2 = 4; //Second side of the triangle is initialized to 4
+int area1 = 0; //Initializing area1 to 0. It will hold the first area
+
+//Initializing variables for SECOND case
+double side3 = 0;//First side of the triangle is initialized to 0
+double side4 = 0;//Second side of the triangle is initialized to 0
+double area2 = 0;//Initializing area1 to 0. It will hold the second area
+
+area1 = side1 * side2 / 2; //Calculating the area for first case
+
+//Second Part
+side3 = side1 * 5; //As per the question second part's side holds the result of side 1 multiplied by 5
+side4 = side2 * 5; //As per the question second part's side holds the result of side 2 multiplied by 5
+
+area2 = (side3 * side4 / 2);
+
+cout<<"The sides of the triangle measure "<<side1<< " and " <<side2<<". The area is "<<area1<<endl;
+cout.precision(1);// to show only 1 decimal place the decimal for r.g 1.0
+cout<<fixed<<"The sides of the triangle measure "<<side3<< " and " <<side4<<". The area is "<< area2<<endl;
+
+}
