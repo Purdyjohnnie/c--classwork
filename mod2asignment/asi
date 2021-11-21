@@ -1,0 +1,123 @@
+#include <iostream> 
+
+#include <cstdlib> 
+
+#include <string> 
+
+  
+
+  
+
+using namespace std; 
+
+  
+
+int main() 
+
+{ 
+
+   string light = ""; 
+
+   string tSignal = ""; 
+
+    
+
+   // User input 
+
+    
+
+   //what color is the light? 
+
+    cout<<"Is the traffic light, red, green or yellow?"<<endl; 
+
+    cin>>light; 
+
+     
+
+    if(light != "green"){ 
+
+       cout<<"The Light is " <<light<<", Car decided to wait."<<endl; 
+
+       exit(0); 
+
+                        } 
+
+    else if(light == "green"); 
+
+        { 
+
+       cout<<"The Light is " <<light<<endl; 
+
+        } 
+
+     
+
+    // Is there traffic? 
+
+    int traffic = 0; 
+
+    while(true) 
+
+    { 
+
+    cout << "**" <<"If traffic is present enter 1, if not then Enter 2!" << endl; 
+
+    cin >> traffic; 
+
+  
+
+    if(traffic == 1) 
+
+        { 
+
+    cout << "car  decided to wait, beacause traffic!\n"; 
+
+    exit(0); 
+
+        } 
+
+  
+
+    else if(traffic==2) 
+
+          
+
+          
+
+     // What kind of turn?    
+
+    cout<<"Are you turning left or right"<<endl; 
+
+    cin>>tSignal; 
+
+     
+
+    if(tSignal != "left"){ 
+
+       cout<<tSignal<<" Car has decided to turn!"<<endl; 
+
+       exit(0); 
+
+                        } 
+
+    else if(tSignal == "right"); 
+
+        { 
+
+       cout <<tSignal<<",  Car has decided to turn!"<<endl; 
+
+       exit(0); 
+
+        } 
+
+         
+
+        { 
+
+    break; 
+
+        } 
+
+    } 
+
+} 
